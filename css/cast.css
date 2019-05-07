@@ -1,0 +1,13 @@
+.tab1:hover ~ hr {
+	margin: 0;
+	width: 106px;
+}
+
+hr {
+  height: .25rem;
+  width: 57px;
+  margin-left: 120px;
+  background: tomato;
+  border: none;
+  transition: .3s ease-in-out;
+}
