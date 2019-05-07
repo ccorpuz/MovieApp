@@ -157,3 +157,60 @@ nav hr {
 	padding: 3px;
 }
 
+.middle {
+	float: left;
+	width: 50%;
+	font-family: Arial;
+	margin-top: 5px;
+}
+
+.info_middle:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.mrating {
+	text-align: right;
+}
+
+.button {
+	display: inline-block;
+	padding: 10px;
+	align-items: center;
+	border: 1px solid #eee;
+	border-radius: 50%;
+}
+
+#like {
+	height: 22px;
+	width: 22px;
+	background-image: url("../img/like.png");
+	background-position:50% 50%;
+    background-repeat:no-repeat; 
+}
+
+#unlike {
+	height: 22px;
+	width: 22px;
+	margin-left: 10px;
+	background-image: url("../img/unlike.png");
+	background-position:50% 50%;
+    background-repeat:no-repeat; 
+}
+
+.button:hover {
+	border-color: #686868;
+}
+
+#middle_text{
+	font-size: 0.9rem;
+	color: #434444;
+}
+
+#middle_smalltext{
+	font-size: 0.8rem;
+	color: #a0a2a5;
+}
+
+

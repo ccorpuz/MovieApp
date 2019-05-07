@@ -24,13 +24,13 @@
 		</ul>
 	</nav>
 	<div class="posters">
-		<div class="poster"><img src="./img/movie1.jpeg"></div>
-		<div class="poster"><img src="./img/movie2.jpeg"></div>
-		<div class="poster"><img src="./img/movie3.jpeg"></div>
-		<div class="poster"><img src="./img/movie4.jpeg"></div>
-		<div class="poster"><img src="./img/movie5.jpeg"></div>
-		<div class="poster"><img src="./img/movie6.jpeg"></div>
-		<div class="poster"><img src="./img/movie7.jpeg"></div>
+		<div class="poster"><img src="./img/movie1.jpeg" alt="movie poster"></div>
+		<div class="poster"><img src="./img/movie2.jpeg" alt="movie poster"></div>
+		<div class="poster"><img src="./img/movie3.jpeg" alt="movie poster"></div>
+		<div class="poster"><img src="./img/movie4.jpeg" alt="movie poster"></div>
+		<div class="poster"><img src="./img/movie5.jpeg" alt="movie poster"></div>
+		<div class="poster"><img src="./img/movie6.jpeg" alt="movie poster"></div>
+		<div class="poster"><img src="./img/movie7.jpeg" alt="movie poster"></div>
 	</div>
 	<div class="info_card">
 		<div class="info_top">
@@ -49,8 +49,16 @@
 		</div>
 		<hr>
 		<div class="info_middle">
-			
+			<div class="middle">
+				<span id="middle_text">96% of users liked this film</span><br>
+				<span id="middle_smalltext">Movie App users</span>
+			</div>
+			<div class="middle mrating">
+				<div class="button" id="like" onclick="activate('like');"></div>
+				<div class="button" id="unlike" onclick="activate('unlike');"></div>
+			</div>
 		</div>
+		<hr>
 		<div class="info_bottom">
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -60,5 +68,6 @@
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 		</div>
 	</div>
+	<script type="text/javascript" src="./js/index.js"></script>
 </body>
 </html>
