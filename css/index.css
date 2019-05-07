@@ -3,8 +3,10 @@ body {
 }
 
 header {
-	background-color: #273c75;
+	height: 200px;
 	width: 100%;
+	background: #0c6d75;
+	background-image: linear-gradient(rgba(0,0,0,0.5), #0c6d75), url("../img/main.jpeg");
 }
 
 .titletext {
@@ -36,7 +38,7 @@ header {
 
 nav {
   overflow: hidden;
-  background-color: #273c75;
+  background-color: #0c6d75;
 }
 
 nav ul {
@@ -210,7 +212,7 @@ nav hr {
 	border-color: #686868;
 }
 
-#middle_text{
+.middle_text{
 	font-size: 0.9rem;
 	color: #434444;
 }
@@ -220,4 +222,12 @@ nav hr {
 	color: #a0a2a5;
 }
 
+.info_bottom {
+	margin-top: 20px;
+	font-family: Arial;
+}
+
+.info_bottom #summary{
+	font-size: 0.9rem;
+}
 
