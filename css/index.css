@@ -83,6 +83,12 @@ nav hr {
     padding-bottom: 7px;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 .poster {
 	display: inline-block;
 	height: 170px;
@@ -180,6 +186,7 @@ nav hr {
 	align-items: center;
 	border: 1px solid #eee;
 	border-radius: 50%;
+	cursor: pointer;
 }
 
 #like {
