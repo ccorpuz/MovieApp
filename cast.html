@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>
 		Movie App
 	</title>
@@ -10,20 +10,49 @@
 </head>
 <body>
 	<header>
-		<div class="title_info">
-			<div class="title_menu"></div>
+		<div class="title_info" id="overview">
+			<div class="title_menu">
+				<img src="./img/threedot.png" onclick="toggleMenu();">
+				<div id="drop_menu" class="menu_content">
+				    <a href="#"><img src="./img/share.png">Share</a>
+				    <a href="#"><img src="./img/feedback.png">Send feedback</a>
+				    <a href="#" onclick="toggleMenu();"><img src="./img/close.png">Close menu</a>
+			  </div>
+			</div>
 			<p class="titletext">The Dark Knight</p>
 			<p class="subtext">2008. Drama/Thriller. 2h 32m</p>
 		</div>
 		
 	</header>
-	<nav>
+	<nav id="nav">
 		<ul>
-			<li class="tab1"><a href="./index.html">OVERVIEW</a></li>
-			<li class="tab2"><a href="#cast">CAST</a></li>
+			<li id="tab1"><a href="index.html">OVERVIEW</a></li>
+			<li id="tab2"><a href="cast.html">CAST</a></li>
 			<hr/>
 		</ul>
 	</nav>
-
+	<div class="info_card" id="cast">
+		<div class="cast_card">
+			<img src="./img/cast/actor1.jpeg">
+			<div class="cast_text">Christian Bale</div>
+		</div>
+		<div class="cast_card">
+			<img src="./img/cast/actor2.jpeg">
+			<div class="cast_text">Heath Ledger</div>
+		</div>
+		<div class="cast_card">
+			<img src="./img/cast/actor3.jpg">
+			<div class="cast_text">Thanos</div>
+		</div>
+		<div class="cast_card">
+			<img src="./img/cast/actor4.jpeg">
+			<div class="cast_text">Gary Oldman</div>
+		</div>
+		<div class="cast_card">
+			<img src="./img/cast/actor5.jpeg">
+			<div class="cast_text">Morgan Freeman</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="./js/index.js"></script>
 </body>
 </html>

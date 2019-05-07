@@ -1,4 +1,4 @@
-.tab1:hover ~ hr {
+#tab1:hover ~ hr {
 	margin: 0;
 	width: 106px;
 }

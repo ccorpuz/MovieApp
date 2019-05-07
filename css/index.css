@@ -7,6 +7,8 @@ header {
 	width: 100%;
 	background: #0c6d75;
 	background-image: linear-gradient(rgba(0,0,0,0.5), #0c6d75), url("../img/main.jpeg");
+	background-repeat:no-repeat;
+	background-size: 100%; 
 }
 
 .titletext {
@@ -92,7 +94,7 @@ nav a {
   font-size: 0.8rem;
 }
 
-.tab2:hover ~ hr {
+#tab2:hover ~ hr {
 	margin-left: 120px;
 	width: 57px;
 }
@@ -126,6 +128,8 @@ nav hr {
 	display: inline-block;
 	height: 170px;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	cursor: pointer;
+	transition: 0.3s
 }
 
 .poster:first-child{
@@ -149,6 +153,7 @@ nav hr {
 	padding: 20px;
 	border-radius: 5px;
 	box-shadow: 0px 2px 8px 0 rgba(0,0,0,0.1);
+	font-family: Arial;
 }
 
 .info_card hr {
@@ -167,7 +172,6 @@ nav hr {
 .info_top a {
 	box-sizing:border-box;
 	text-align: center;
-	font-family: Arial;
 	text-decoration: none;
 	float: left;
 	width: 33.33%;
@@ -199,7 +203,6 @@ nav hr {
 .middle {
 	float: left;
 	width: 50%;
-	font-family: Arial;
 	margin-top: 5px;
 }
 
@@ -255,7 +258,6 @@ nav hr {
 
 .info_bottom {
 	margin-top: 20px;
-	font-family: Arial;
 }
 
 .info_bottom #summary{
@@ -265,9 +267,20 @@ nav hr {
 #info_extra {
 	margin-top: 20px;
 }
+
 .tidbit {
 	padding-bottom: 7px;
 }
+
 .boldtext {
 	font-size: 0.9rem;
+}
+
+.cast_card {
+	display: inline-block;
+}
+
+.cast_card img {
+	width: 96px;
+	height: 96px;
 }
