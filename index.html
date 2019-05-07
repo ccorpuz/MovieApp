@@ -10,7 +10,14 @@
 <body>
 	<header>
 		<div class="title_info">
-			<div class="title_menu"></div>
+			<div class="title_menu">
+				<img src="./img/threedot.png" onclick="toggleMenu();">
+				<div id="drop_menu" class="menu_content">
+				    <a href="#"><img src="./img/share.png">Share</a>
+				    <a href="#"><img src="./img/feedback.png">Send feedback</a>
+				    <a href="#" onclick="toggleMenu();"><img src="./img/close.png">Close menu</a>
+			  </div>
+			</div>
 			<p class="titletext">The Dark Knight</p>
 			<p class="subtext">2008. Drama/Thriller. 2h 32m</p>
 		</div>
@@ -51,7 +58,7 @@
 		<div class="info_middle">
 			<div class="middle">
 				<span class="middle_text">96% of users liked this film</span><br>
-				<span id="middle_smalltext">Movie App users</span>
+				<span class="smalltext">Movie App users</span>
 			</div>
 			<div class="middle mrating">
 				<div class="button" id="like" onclick="activate('like');"></div>

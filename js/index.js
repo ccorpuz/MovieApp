@@ -1,9 +1,11 @@
-window.onscroll = function() {myFunction()};
+window.onscroll = function() {
+	stickyScroll()
+};
 
 var nav = document.getElementById("nav");
 var sticky = nav.offsetTop;
 
-function myFunction() {
+function stickyScroll() {
   if (window.pageYOffset >= sticky) {
     nav.classList.add("sticky")
   } else {
@@ -20,4 +22,8 @@ function activate(choice){
 		document.getElementById("like").style.backgroundImage = "url('./img/like.png')";
 		document.getElementById("unlike").style.backgroundImage = "url('./img/unliked.png')";
 	}
+}
+
+function toggleMenu() {
+  document.getElementById("drop_menu").classList.toggle("show");
 }
