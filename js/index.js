@@ -35,6 +35,12 @@ function showModal(src) {
 	modal.style.display = "block";	
 }
 
+var posterImages = document.getElementsByClassName("posterImage");
+
+for (var i = 0; i < posterImages.length; i++) {
+    posterImages[i].addEventListener('click', showModal.bind(this, posterImages[i].src), false);
+}
+
 function closeModal(){
 	document.getElementById('poster_modal').style.display = "none";
 }
