@@ -245,7 +245,7 @@ nav hr {
 #like {
 	height: 22px;
 	width: 22px;
-	background-image: url("../img/like.png");
+	background-image: url("../img/interface/like.png");
 	background-position:50% 50%;
     background-repeat:no-repeat; 
 }
@@ -254,7 +254,7 @@ nav hr {
 	height: 22px;
 	width: 22px;
 	margin-left: 10px;
-	background-image: url("../img/unlike.png");
+	background-image: url("../img/interface/unlike.png");
 	background-position:50% 50%;
     background-repeat:no-repeat; 
 }

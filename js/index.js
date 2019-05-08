@@ -1,3 +1,10 @@
+//	Image Links
+const like_image = "url('./img/interface/like.png')";
+const unlike_image = "url('./img/interface/unlike.png')";
+const liked_image = "url('./img/interface/liked.png')";
+const unliked_image = "url('./img/interface/unliked.png')";
+
+//	Sticky Navigation
 window.onscroll = function() {
 	stickyScroll()
 };
@@ -16,18 +23,20 @@ function stickyScroll() {
 //	Changes like and unlike button colours
 function activate(choice){
 	if (choice === "like") {
-		document.getElementById("like").style.backgroundImage = "url('./img/liked.png')";
-		document.getElementById("unlike").style.backgroundImage = "url('./img/unlike.png')";
+		document.getElementById("like").style.backgroundImage = liked_image;
+		document.getElementById("unlike").style.backgroundImage = unlike_image;
 	} else {
-		document.getElementById("like").style.backgroundImage = "url('./img/like.png')";
-		document.getElementById("unlike").style.backgroundImage = "url('./img/unliked.png')";
+		document.getElementById("like").style.backgroundImage = like_image;
+		document.getElementById("unlike").style.backgroundImage = unliked_image;
 	}
 }
 
+//	Share Feedback Menu
 function toggleMenu() {
   document.getElementById("drop_menu").classList.toggle("show");
 }
 
+//	Modal
 function showModal(src) {
 	var modal = document.getElementById('poster_modal');
 	var modalImg = document.getElementById("modalImage");
