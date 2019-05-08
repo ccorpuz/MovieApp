@@ -26,8 +26,11 @@ header {
 .title_menu {
 	float: right;
 	position: relative;
-	cursor: pointer;
 	display: inline-block;
+}
+
+.clickable {
+	cursor: pointer;
 }
 
 .menu_content {
@@ -128,7 +131,6 @@ nav hr {
 	display: inline-block;
 	height: 170px;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-	cursor: pointer;
 	transition: 0.3s
 }
 
@@ -145,6 +147,28 @@ nav hr {
 /* Make image slider scrollbar invisible on web-kit browsers */
 ::-webkit-scrollbar {
     display:none;
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1; 
+	left: 0;
+	top: 0;
+	width: 100%; 
+	height: 100%; 
+	overflow: auto; 
+	background-color: rgb(0,0,0); 
+	background-color: rgba(0,0,0,0.9); 
+}
+
+#modalImage {
+	position: absolute;
+	max-height: 100%;
+	max-width: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .info_card {
@@ -184,10 +208,10 @@ nav hr {
 	border-right: 1px solid #eee;
 }
 
-.info_top:after {
-  content: "";
-  display: table;
-  clear: both;
+.clearfix:after {
+	content: "";
+  	display: table;
+  	clear: both;
 }
 
 .rating {
@@ -206,12 +230,6 @@ nav hr {
 	margin-top: 5px;
 }
 
-.info_middle:after {
-	content: "";
-	display: table;
-	clear: both;
-}
-
 .mrating {
 	text-align: right;
 }
@@ -222,7 +240,6 @@ nav hr {
 	align-items: center;
 	border: 1px solid #eee;
 	border-radius: 50%;
-	cursor: pointer;
 }
 
 #like {
@@ -274,13 +291,4 @@ nav hr {
 
 .boldtext {
 	font-size: 0.9rem;
-}
-
-.cast_card {
-	display: inline-block;
-}
-
-.cast_card img {
-	width: 96px;
-	height: 96px;
 }

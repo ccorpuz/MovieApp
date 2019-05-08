@@ -11,3 +11,12 @@ nav hr {
   border: none;
   transition: .3s ease-in-out;
 }
+
+.cast_card {
+	display: inline-block;
+}
+
+.cast_card img {
+	width: 96px;
+	height: 96px;
+}

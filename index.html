@@ -10,7 +10,7 @@
 <body>
 	<header>
 		<div class="title_info" id="overview">
-			<div class="title_menu">
+			<div class="title_menu clickable">
 				<img src="./img/threedot.png" onclick="toggleMenu();">
 				<div id="drop_menu" class="menu_content">
 				    <a href="#"><img src="./img/share.png">Share</a>
@@ -31,16 +31,21 @@
 		</ul>
 	</nav>
 	<div class="posters">
-		<div class="poster"><img src="./img/poster/poster1.jpg" alt="movie poster"></div>
-		<div class="poster"><img src="./img/poster/poster2.jpg" alt="movie poster"></div>
-		<div class="poster"><img src="./img/poster/poster3.jpg" alt="movie poster"></div>
-		<div class="poster"><img src="./img/poster/poster4.jpg" alt="movie poster"></div>
-		<div class="poster"><img src="./img/poster/poster5.jpeg" alt="movie poster"></div>
-		<div class="poster"><img src="./img/poster/poster6.jpeg" alt="movie poster"></div>
-		<div class="poster"><img src="./img/poster/poster7.jpeg" alt="movie poster"></div>
+		<div class="poster clickable"><img id="poster1" src="./img/poster/poster1.jpg" alt="movie poster" onclick="showModal(this.src);"></div>
+		<div class="poster clickable"><img id="poster2" src="./img/poster/poster2.jpg" alt="movie poster" onclick="showModal(this.src);"></div>
+		<div class="poster clickable"><img id="poster3" src="./img/poster/poster3.jpg" alt="movie poster" onclick="showModal(this.src);"></div>
+		<div class="poster clickable"><img id="poster4" src="./img/poster/poster4.jpg" alt="movie poster" onclick="showModal(this.src);"></div>
+		<div class="poster clickable"><img id="poster5" src="./img/poster/poster5.jpeg" alt="movie poster" onclick="showModal(this.src);"></div>
+		<div class="poster clickable"><img id="poster6" src="./img/poster/poster6.jpeg" alt="movie poster" onclick="showModal(this.src);"></div>
+		<div class="poster clickable"><img id="poster7" src="./img/poster/poster7.jpeg" alt="movie poster" onclick="showModal(this.src);"></div>
 	</div>
+
+	<div id="poster_modal" class="modal" onclick="closeModal();">
+		<img class="modal-content" id="modalImage">
+	</div>
+
 	<div class="info_card">
-		<div class="info_top">
+		<div class="info_top clearfix">
 			<a href="https://www.imdb.com/title/tt0468569/">
 				<span class="rating">9/10</span><br>
 				<span class="reviewer">IMDb</span>
@@ -55,14 +60,14 @@
 			</a>
 		</div>
 		<hr>
-		<div class="info_middle">
+		<div class="info_middle clearfix">
 			<div class="middle">
 				<span class="middle_text">96% of users liked this film</span><br>
 				<span class="smalltext">Movie App users</span>
 			</div>
 			<div class="middle mrating">
-				<div class="button" id="like" onclick="activate('like');"></div>
-				<div class="button" id="unlike" onclick="activate('unlike');"></div>
+				<div class="button clickable" id="like" onclick="activate('like');"></div>
+				<div class="button clickable" id="unlike" onclick="activate('unlike');"></div>
 			</div>
 		</div>
 		<hr>

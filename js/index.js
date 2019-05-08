@@ -27,3 +27,14 @@ function activate(choice){
 function toggleMenu() {
   document.getElementById("drop_menu").classList.toggle("show");
 }
+
+function showModal(src) {
+	var modal = document.getElementById('poster_modal');
+	var modalImg = document.getElementById("modalImage");
+	modalImg.src = src;
+	modal.style.display = "block";	
+}
+
+function closeModal(){
+	document.getElementById('poster_modal').style.display = "none";
+}
