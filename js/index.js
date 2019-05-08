@@ -36,7 +36,7 @@ function toggleMenu() {
   document.getElementById("drop_menu").classList.toggle("show");
 }
 
-//	Modal
+//	Poster Modal
 function showModal(src) {
 	var modal = document.getElementById('poster_modal');
 	var modalImg = document.getElementById("modalImage");

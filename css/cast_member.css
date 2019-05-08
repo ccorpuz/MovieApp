@@ -1,0 +1,69 @@
+body {
+	margin: 0;
+}
+
+header {
+	background: #7b7c7c;
+	height: 115px;
+}
+
+#actor_image {
+	height: 160px;
+	width: 160px;
+	float: right;
+	border-radius: 5px;
+}
+
+#arrow {
+	width: 100%;
+	text-align: right;
+}
+
+#arrow img {
+	padding: 5px;
+}
+
+.titletext {
+	margin-left: 25px;
+	font-size: 1.8rem;
+}
+
+.container {
+	align-content: center;
+}
+
+.actor_image img {
+	width: 260px;
+	height: 260px;
+	border-radius: 5px;
+} 
+
+.boldtext {
+	font-size: 0.9rem;
+	display: block;
+	margin-bottom: 5px;
+}
+
+.middle_text {
+	font-size: 1.3rem;
+}
+
+.info_card {
+	min-height: 264px; 
+}
+
+.left {
+	float: left;
+	min-width: 100px;
+}
+
+.right {
+	overflow: auto;
+	min-width: 200px;
+}
+
+.info_text{
+	font-size: 1rem;
+	font-family: Arial;
+	color: #434444;
+}
