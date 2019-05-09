@@ -1,7 +1,7 @@
 //	Put selected cast member id in sessionStorage
-
 function redirectCast(id){
-	location.href = "./cast_member.html?a=" + id;
+	sessionStorage.setItem("actor", id);
+	location.href = "./cast_member.html";
 }
 
 var castClasses = document.getElementsByClassName("cast_card");
