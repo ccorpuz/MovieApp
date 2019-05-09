@@ -50,3 +50,9 @@ nav hr {
 	color: #a0a2a5;
 	padding: 10px;
 }
+
+.poof {
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s 1s, opacity 1s linear;
+}
