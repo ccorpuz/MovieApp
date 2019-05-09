@@ -76,7 +76,7 @@ header {
 
 .left {
 	float: left;
-	min-width: 100px;
+	min-width: 200px;
 }
 
 .right {
@@ -84,8 +84,12 @@ header {
 	min-width: 200px;
 }
 
-.info_text{
+.info_text {
 	font-size: 1rem;
 	font-family: Arial;
 	color: #434444;
+}
+
+.posters {
+	border-bottom: none;
 }
